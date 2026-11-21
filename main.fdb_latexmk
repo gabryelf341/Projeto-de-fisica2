@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1795289197.71207 "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" "build/main.pdf" "main" 1795289198.22707 0
+["pdflatex"] 1795290554.76936 "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" "main.pdf" "main" 1795290555.31314 0
   "/home/gabryel/.texlive2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1789311250 3334137 1c3ce3b5763dd5a6644d5954bd6b4840 ""
-  "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" 1795289197.46846 2838 00c27103d5abaa5549ee5864f6e9175f ""
+  "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" 1795290553.92371 2841 00f80bf83b0ff6b6a777943542b98e39 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
@@ -41,12 +41,12 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty" 1777334400 33142 9bb42b20c3b9f997e4af4ea629c919b6 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1777593600 43785 66587115382950aca692b5f6e3c2fb74 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1794145053 5455094 c95c74aeea329fbe64c1315d3d16db21 ""
-  "build/main.aux" 1795289198.1681 860 8fba11cbdef9ad140f0cd5d1723377e7 "pdflatex"
-  "build/main.toc" 1795289198.1691 432 78fe9c3746b94b2b5e3c0a67b8e28e45 "pdflatex"
-  "main.tex" 1795289197.46846 2838 00c27103d5abaa5549ee5864f6e9175f ""
+  "main.aux" 1795290555.25234 860 8fba11cbdef9ad140f0cd5d1723377e7 "pdflatex"
+  "main.tex" 1795290553.92371 2841 00f80bf83b0ff6b6a777943542b98e39 ""
+  "main.toc" 1795290555.25434 432 78fe9c3746b94b2b5e3c0a67b8e28e45 "pdflatex"
   (generated)
-  "build/main.aux"
-  "build/main.log"
-  "build/main.pdf"
-  "build/main.toc"
+  "main.aux"
+  "main.log"
+  "main.pdf"
+  "main.toc"
   (rewritten before read)

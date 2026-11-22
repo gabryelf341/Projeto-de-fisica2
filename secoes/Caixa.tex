@@ -1,0 +1,128 @@
+\section{A caixa}
+
+\textbf{(1.a)} Mostre que, na fase de contato à direita, a equação de movimento é
+\begin{center}
+    $m \ddot{\vec{x}} = -k A_R \vec{x} + k_{muro} d \hat{x_N}, \quad  A_R = A_0 + \frac{k_{muro}}{k} \hat{x_N} \hat{x_N}^T$,
+\end{center}
+onde $x_N {x_N}^T$ é a matriz cujo único elemento não nulo é o $(N, N)$, igual a 1. O termo constante
+não existia no Projeto 1, porque lá a parede estava na posição de equilíbrio da massa $N$. Mostre
+que a mudança de variáveis $\vec{y} = \vec{x} - \vec{u}$, com $A_r \vec{u} = \frac{k_{muro}}{k} d \hat{x_N}$, elimina esse termo e devolve
+a forma do Projeto 1, $m \ddot{\vec{y}} = -k A_R \vec{y}$. Encontre $\vec{u}$ explicitamente e interprete-o fisicamente. Faça
+o mesmo para o contato à esquerda.
+
+\vspace{0.3cm}
+\textbf{Solução:} Assim como  projeto 1, na configuração livre, a equação de movimento é dado por:
+\begin{center}
+    $m \ddot{\vec{x}} = -k A_0 \vec{x}$ 
+\end{center}
+
+
+Quando a mola está em contato com a parede direita, significa que a massa $N$ sofre uma força a mais da parede. Essa força é dado por:
+
+\begin{center}
+    $F_N = -k_{muro} (x_N - d)$ 
+\end{center}
+
+Lembre da força que calculamos no projeto 1 para a massa $N$:
+\begin{center}
+    $m \ddot{x}_N = -k (x_N - x_{N-1}) $
+\end{center}
+
+Com a força adicional da parede, temos que a equação de movimento da massa $N$ é:
+\begin{center}
+    $m \ddot{x}_N = -k (x_N - x_{N-1}) - k_{muro} (x_N - d)$
+\end{center}
+
+Que pode ser escrito como:
+
+\begin{center}
+    $m \ddot{x}_N = -k [-x_{N-1}+(1+\frac{k_{muro}}{k}) x_N] + k_{muro} d$ 
+\end{center}
+
+Perceba que no contato à direita, somente a massa $N$ sofre uma alteração na força. As outras massas de $1$ até $N-1$ não sofrem alteração.
+Podemos escrever isso na forma matricial da seguinte forma:
+\begin{center}
+    $m \ddot{\vec{x}} = -k A_0 \vec{x} -k_{muro} \hat{x}_N \hat{x}_N^T \vec{x}+k_{muro} d \hat{x_N}$
+\end{center}
+onde $\hat{x}_N = (0,0, \dots, 1)$.
+Os termos $-k_{muro} \hat{x}_N {\hat{x}_N}^T \vec{x}$ e $k_{muro} d \hat{x_N}$ só alteram $m \ddot{x}_N$ na matriz, são as forças adicionais que a parede faz na massa $N$.
+
+Vamos ficar com
+
+\begin{center}
+    $m \ddot{\vec{x}} = -k (A_0 \vec{x}+\frac{k_{muro}}{k} \hat{x_N} \hat{x}_N ^ T) \vec{x} + k_{muro} d \hat{x}_N$
+\end{center}
+Se definimos $A_R = A_0 \vec{x}+\frac{k_{muro}}{k} \hat{x_N} \hat{x}_N ^ T$, teremos justamente o que queremos mostrar.
+\begin{center}
+    $m \ddot{\vec{x}} = -k A_R \vec{x} + k_{muro} d \hat{x}_N$
+\end{center}
+
+Colocando $\vec{y} = \vec{x} - \vec{u}$ com $A_R \vec{u} = (k_{muro}/k) d \hat{x}_N$. O vetor $\vec{u}$ é constante. 
+Por causa disso, vamos ter que $\ddot{\vec{y}} = \ddot{\vec{x}}$.
+E então, isolando $\vec{x}$, $\vec{x} = \vec{y} + \vec{u}$ 
+
+\begin{align*}
+    m \ddot{\vec{y}} = m \ddot{\vec{x}} &= -k A_R (\vec{y}+\vec{u}) +k_{muro} d \hat{x}_N \\
+    &= -k A_R \vec{y} -k A_R \vec{u} +k_{muro} d \hat{x}_N \\
+    &=-k A_R \vec{y} - k_{muro} d \hat{x}_N + k_{muro} d \hat{x}_N = -k A_R \vec{y}
+\end{align*}
+
+Queremos encontrar $\vec{u}$ tal que
+\begin{center}
+    $A_R \vec{u} = (k_{muro}/k) d \hat{x}_N$
+\end{center}
+
+\[
+    A_R \vec{u} =
+    \begin{pmatrix}
+        1 & -1 & 0 & \cdots & 0 \\
+        -1 & 2 & -1 & \cdots & 0 \\
+        0 & -1 & \ddots & \ddots & \vdots \\
+        \vdots & \vdots & \ddots & 2 & -1 \\
+        0 & 0 & \cdots & -1 & 1 + \frac{k_{\text{muro}}}{k}
+    \end{pmatrix}
+    \begin{pmatrix}
+        u_1 \\
+        u_2 \\
+        \vdots \\
+        u_{N-1} \\
+        u_{N}
+    \end{pmatrix}
+    =
+    \begin{pmatrix}
+        0 \\
+        0 \\
+        \vdots \\
+        0 \\
+        \frac{k_{\text{muro}}}{k} d
+    \end{pmatrix}
+\]
+
+Isso é um sistema de equações que vai nos dar que:
+
+\begin{align*}
+    u_1 - u_2 &= 0 \\
+    -u_1 + 2u_2 - u_3 &= 0 \\
+    &\vdots \\
+    -u_{N-3} + 2u_{N-2} - u_{N-1} &= 0 \\
+    -u_{N-1} + \left(1 + \frac{k_{muro}}{k}\right)u_N &= \frac{k_{muro}}{k} d
+\end{align*}
+
+É fácil ver que $u_1 = u_2$, usando isso na segunda equação nos dá que $u_1-u_3=0$. E então $u_1=u_2=u_3$.
+Com as primeiras $N-1$ equações, podemos perceber que $u_1 = u_2 = \dots = u_{N-1} = u_N$. Usando isso na última equação, vamos ter que
+\begin{center}
+    $-u_{N}+(1+\frac{k_{muro}}{k}) u_N = \frac{k_{muro}}{k} d$
+\end{center}
+
+
+Isso vai nos dá que $u_{N} = d$. Portanto $\vec{u} = (d, d, \dots, d)$
+O vetor $\vec{u}$ pode ser interpretado como um vetor constante que translada todas as massas.
+Para o contato com a parede esquerda. Teremos uma força adicional na massa $1$ e montamos a matriz de forma análoga.
+
+\vspace{0.3cm}
+\textbf{(1.b)} Diga por que $A_R$ não tem autovalor nulo, ao contrário de $A_0$. Adapte a rotina do item
+\textbf{(5.a)} do Projeto 1 para que ela receba, além da matriz e das condições iniciais, o deslocamento $\vec{u}$
+do ponto de equilíbrio, e devolva $\vec{x}(t)$ e $\vec{v}(t)$ em qualquer fase.
+
+\vspace{0.3cm}
+\textbf{Solução:}

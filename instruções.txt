@@ -1,0 +1,17 @@
+Instruções de como executar/examinar o projeto. 
+
+Foram feitos os items:
+
+Arquivos enviados:
+    - main.pdf (O relatório em pdf)
+    - main.ipynb (Um arquivo notebook python com todos os códigos)
+    - prompts.txt (Como a IA foi usada para a realização do trabalho)
+
+Participação:
+    - Emanuel Dionisio: Primariamente nos códigos e na execução dos métodos numéricos. Contribuiu secundáriamente na escrita do relatório.
+    - Gabryel Rodrigues: Principal escritor do relatório. Contribuiu secundáriamente no código.
+
+Requisitos para rodar:
+    - Python 3.12.3
+    - bibliotecas:
+        - Numpy: v1.26.4

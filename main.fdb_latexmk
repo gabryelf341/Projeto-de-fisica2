@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1795395265.81643 "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" "main.pdf" "main" 1795395266.52453 0
+["pdflatex"] 1795397490.91533 "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" "main.pdf" "main" 1795397491.62916 0
   "/home/gabryel/.texlive2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1789311250 3334137 1c3ce3b5763dd5a6644d5954bd6b4840 ""
   "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" 1795394904.0634 950 9849d1b72bc36b3a65067a3aa159c5ad ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -63,10 +63,10 @@
   "img/output2.png" 1795394904.05604 81895 1d29e3877e949177ef856ef59cb71908 ""
   "img/output3.png" 1795394904.05693 46853 93771868f12a7eabbb62005c778c59ad ""
   "img/output4.png" 1795394904.05776 67908 50c75b22cab0cfe603ea66918e825309 ""
-  "main.aux" 1795395266.45212 1126 560a5d7e0de7bab6390640af15c521c1 "pdflatex"
+  "main.aux" 1795397491.55712 1126 560a5d7e0de7bab6390640af15c521c1 "pdflatex"
   "main.tex" 1795394904.0634 950 9849d1b72bc36b3a65067a3aa159c5ad ""
   "secoes/Caixa.tex" 1795394904.06363 9625 49cc81a5ceb040371ac0d8581ac8914b ""
-  "secoes/ucqe.tex" 1795395265.5571 2007 4d6449fd94e3a447ffd3c75ae2f0875d ""
+  "secoes/ucqe.tex" 1795397490.66483 1857 e39426113e8bec723579ff01865c1653 ""
   (generated)
   "main.aux"
   "main.log"

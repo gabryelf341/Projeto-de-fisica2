@@ -146,11 +146,71 @@ típica de um contato.
 \vspace{0.3cm}
 \textbf{Solução:}
 Queremos determinar a primeira raiz para a função $f(t) = x_N(t)-d = 0$(ou $f(t) = x_1(t)+d = 0$, depende da fase). Para isso podemos discretizar o tempo $\delta t$ e a cada passo tentar avaliar se houve troca de sinal na função.
+Temos uma fórmula que estima o tempo de contato:
+\begin{center}
+    $t_{contato} \approx \pi \sqrt{\frac{m}{k_{muro}}}$
+\end{center}
 
+Para ver essa fórmula, podemos pensar que o período completo de um ciclo é $T = 2 \pi \sqrt{\frac{m}{k_{muro}}}$
+e ela gasta meio período $(T/2)$ em contato com a parede
 
-\vspace{0.3cm}
+\vspace{2.46cm}
+
 \textbf{(1.d)} Escreva a energia mecânica total, incluindo as molas das paredes quando comprimidas, e
 verifique que ela se conserva ao longo de milhares de colisões. Explique como o erro na energia
 depende da precisão com que os instantes de troca de fase são calculados.
 
+\vspace{0.3cm}
 \textbf{Solução:}
+A energia mecânica é a soma da energia cinética
+$K = \frac{1}{2} m \sum_{i=1}^{N} \ddot{x}_i$ da energia potencial interna $U_{interna} = \frac{1}{2} k \sum_{i=1}^{N-1} (x_{i+1}-x_{i})^2$ e da energia potencial das paredes.
+Na fase livre, essa energia das paredes será zero. Em contato com a parede direita, a energia potencial dessa parede será $U_{muro} = \frac{1}{2} k_{muro} (x_N-d)^2$ (somente a mola da parede direita deformou, ela vai ter energia potencial para voltar a sua posição relaxada). 
+Para o contato com a parede esquerda, a energia potencial é $U_{muro} = \frac{1}{2} k_{muro} (x_1+d)^2$.
+Essa energia vai se conservar mesmo após milhares de colisões. Nosso sistema não tem atrito (nem outras forças dissipativas). Tanto a energia potencial das molas quanto das paredes se derivam de potenciais elásticos.
+
+\vspace{0.3cm}
+\textbf{(1.e)} Como no Projeto 1, é obrigatória uma animação das massas em movimento, agora com
+as duas paredes. Além dela, produzam as visualizações que acharem que revelam melhor o
+que está acontecendo. As sugestões do item \textbf{(5.d)} do Projeto 1 continuam valendo; o diagrama
+espaço-tempo, com as paredes como duas retas verticais, é particularmente instrutivo. O critério
+é o mesmo: a figura deve tornar evidente alguma coisa que não era evidente antes.
+Como no Projeto 1, o padrão é $k_{muro} = k$. Como ponto de partida, tomem $N = 10$ e $d = 6$, com
+a condição inicial do Projeto 1,
+\begin{center}
+    $\vec{x}^0 = (0, 0, \dots , 0)$,  $\vec{v}^0 = (v, v, \dots , v)$, $v = 1$.
+\end{center}
+
+Para $k_{muro} \gg k$, a massa da ponta pode tocar a parede várias vezes seguidas, como vocês viram
+no Projeto 1. Chamaremos de colisão o conjunto de todos os contatos com uma mesma parede
+entre duas visitas à parede oposta.
+
+\vspace{0.3cm}
+
+\textbf{Solução:}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/output.png}
+    \caption{Diagrama espaço-tempo da simulação.}
+    \label{fig:output1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/output2.png}
+    \caption{Segunda visualização dos resultados.}
+    \label{fig:output2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/output3.png}
+    \caption{Terceira visualização dos resultados.}
+    \label{fig:output3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{img/output4.png}
+    \caption{Quarta visualização dos resultados.}
+    \label{fig:output4}
+\end{figure}

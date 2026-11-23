@@ -449,3 +449,94 @@ def anima_caixa(
   )
   plt.close(fig)
   return anim
+
+4. Questão (2.c)
+
+Prompt:
+
+Este é o enunciado: "Na condição inicial padrão, toda a energia está em E1. Simule a primeira colisão e meça a
+fração ε da energia total que passa para as vibrações. Com N ≈ 50, é o que vocês já podiam
+medir no item (6.c) do Projeto 1. Defina o coeficiente de restituição e = |V
+′
+cm/Vcm|, a razão entre
+as velocidades do centro de massa depois e antes da colisão, e relacione-o com ε. Uma colisão
+elástica tem ε = 0 e e = 1."
+
+Faça um programa em python usando como base o código em anexo, usando a função se simulação para calcular os coeficientes em uma 
+colisão de N = 50.
+
+Resposta:
+
+def energias_modais(A0, x_t, v_t, k=1.0, m=1.0):
+  """
+    Projeta x(t) e v(t) sobre os autovetores de A0 e devolve a matriz (N, nt)
+    com a energia E_n(t) de cada modo normal da cadeia livre.
+    """
+  lambdas, u_hat = autovaloresAutovetores(A0)
+
+  # Projeções q_n(t) = u_n . x(t) e dq_n(t) = u_n . v(t)
+  q_t = u_hat.T @ x_t
+  dq_t = u_hat.T @ v_t
+
+  # E_n(t) = 0.5 * m * dq_n^2 + 0.5 * k * lambda_n * q_n^2
+  En_t = 0.5 * m * (dq_t**2) + 0.5 * k * (lambdas[:, np.newaxis] * (q_t**2))
+  return En_t
+
+
+# --- Simulação da primeira colisão com N = 50 ---
+N = 50
+k = 1.0
+m = 1.0
+d = 30.0  # > 24.75 para evitar a 4ª fase
+kmuro = 50.0
+
+A0 = matrizSegundaLei(N, np.zeros(N), k)
+x0 = np.zeros(N)
+v0 = np.ones(N)  # Condição inicial padrão: toda a energia em E1
+
+# Simula tempo suficiente para o ricochete completo na parede direita (antes de bater na esquerda)
+t_tot, x_tot, v_tot = simular_caixa(N, x0, v0, d, kmuro, t_max=150.0, k=k, m=m)
+
+# Calcula as energias modais ao longo do tempo
+En_t = energias_modais(A0, x_tot, v_tot, k=k, m=m)
+E1_t = En_t[0, :]  # Modo n=1 (centro de massa)
+Evib_t = np.sum(En_t[1:, :], axis=0)  # Soma dos modos n=2..N (vibrações)
+
+# Identifica o instante após o descolamento definitivo da parede direita
+# (fase livre após t > d/v0 com velocidade do centro de massa negativa)
+v_cm_t = np.mean(v_tot, axis=0)
+idx_pos_colisao = np.where((x_tot[-1, :] < d) & (v_cm_t < 0))[0][0]
+
+V_cm_antes = v_cm_t[0]
+V_cm_depois = v_cm_t[idx_pos_colisao]
+
+e = abs(V_cm_depois / V_cm_antes)
+E_total = E1_t[0]
+eps = Evib_t[idx_pos_colisao] / E_total
+
+print(f"V_cm antes  = {V_cm_antes:+.6f}")
+print(f"V_cm depois = {V_cm_depois:+.6f}")
+print(f"Coeficiente de restituição (e) : {e:.6f}")
+print(f"Fração vibracional (ε medida)  : {eps:.6f} ({100*eps:.2f}%)")
+print(f"Relação teórica (1 - e²)       : {1 - e**2:.6f}")
+print(f"Diferença |ε - (1 - e²)|       : {abs(eps - (1 - e**2)):.2e}")
+
+# --- Gráfico da transferência de energia durante a 1ª colisão ---
+plt.figure(figsize=(10, 4))
+plt.plot(t_tot, E1_t, label="$E_1(t)$ (Centro de massa)")
+plt.plot(t_tot, Evib_t, label="$\\sum_{n=2}^N E_n(t)$ (Vibrações internas)")
+plt.plot(
+    t_tot,
+    E1_t + Evib_t,
+    "--",
+    color="k",
+    label="$\\sum_{n=1}^N E_n(t) = E - U_{\\mathrm{muro}}$",
+)
+plt.xlabel("Tempo (s)")
+plt.ylabel("Energia")
+plt.title(
+    f"Partição da energia modal na 1ª colisão ($N={N}$, $k_{{\\mathrm{{muro}}}}={kmuro}$)"
+)
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()

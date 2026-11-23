@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1795393204.75979 "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" "main.pdf" "main" 1795393205.27219 0
+["pdflatex"] 1795394169.86801 "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" "main.pdf" "main" 1795394170.62868 0
   "/home/gabryel/.texlive2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1789311250 3334137 1c3ce3b5763dd5a6644d5954bd6b4840 ""
-  "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" 1795390461.31419 907 19e8aa28c762d2d85c4785c7550ae5e3 ""
+  "/home/gabryel/Documentos/Projeto-de-fisica2/main.tex" 1795394168.80513 950 9849d1b72bc36b3a65067a3aa159c5ad ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -43,6 +43,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty" 1777593600 5048 0270515b828149155424600fd2d58ac5 ""
   "/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo" 1777593600 8449 8dc66c6c313c8eb2d774af83bca435dd ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
+  "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1759176675 19626 23e2822b9b2b5005f4c549ca98b9334d ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty" 1748806692 18363 69bb4f5538964bfea50d1e6d89cbe69f ""
@@ -58,9 +59,14 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty" 1777334400 33142 9bb42b20c3b9f997e4af4ea629c919b6 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1777593600 43785 66587115382950aca692b5f6e3c2fb74 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1794145053 5455094 c95c74aeea329fbe64c1315d3d16db21 ""
-  "main.aux" 1795393205.20069 266 ead0991c8acbb22ad6a515e14b26999c "pdflatex"
-  "main.tex" 1795390461.31419 907 19e8aa28c762d2d85c4785c7550ae5e3 ""
-  "secoes/Caixa.tex" 1795393204.50889 8894 0cce30c6b807afacd770e6961c334cef ""
+  "img/output.png" 1795393542.09912 127621 871dd96187eb409f79df3cf5dfd0ebf6 ""
+  "img/output2.png" 1795393571.76042 81895 1d29e3877e949177ef856ef59cb71908 ""
+  "img/output3.png" 1795393580.84688 46853 93771868f12a7eabbb62005c778c59ad ""
+  "img/output4.png" 1795393588.42077 67908 50c75b22cab0cfe603ea66918e825309 ""
+  "main.aux" 1795394170.54943 1126 ad1d6084576f36ea8be93ff7577f98fa "pdflatex"
+  "main.tex" 1795394168.80513 950 9849d1b72bc36b3a65067a3aa159c5ad ""
+  "secoes/Caixa.tex" 1795394133.41247 9625 49cc81a5ceb040371ac0d8581ac8914b ""
+  "secoes/ucqe.tex" 1795393249.5697 287 243d7ab817052252540a0817967d01dd ""
   (generated)
   "main.aux"
   "main.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.13)  22 NOV 2026 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.9.13)  22 NOV 2026 21:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -217,39 +217,46 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count309
 \l__lipsum_a_int=\count310
 \l__lipsum_b_int=\count311
- (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./main.aux
+ (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count312
+\float@exts=\toks25
+\float@box=\box101
+\@float@everytoks=\toks26
+\@floatcapt=\box102
+) (./main.aux
 Package babel Info: 'portuges' activates 'portuges' shorthands.
 (babel)             Reported on input line 5.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count312
+\scratchcounter=\count313
 \scratchdimen=\dimen172
-\scratchbox=\box101
-\nofMPsegments=\count313
-\nofMParguments=\count314
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count315
+\scratchbox=\box103
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count316
 \MPscratchDim=\dimen173
-\MPnumerator=\count316
-\makeMPintoPDFobject=\count317
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -262,25 +269,47 @@ Overfull \hbox (6.59958pt too wide) in paragraph at lines 164--170
 []\OT1/cmr/bx/n/12 Solu^^Xc~ao: \OT1/cmr/m/n/12 A ener-gia mec^anica ^^Se a soma da ener-gia cin^^Setica $\OML/cmm/m/it/12 K \OT1/cmr/m/n/12 = []\OML/cmm/m/it/12 m [][] []$
  []
 
-) [4] (./main.aux)
+<img/output.png, id=26, 440.1243pt x 450.2421pt>
+File: img/output.png Graphic file (type png)
+<use img/output.png>
+Package pdftex.def Info: img/output.png  used on input line 192.
+(pdftex.def)             Requested size: 312.00119pt x 319.1932pt.
+[4]
+<img/output2.png, id=31, 531.1845pt x 283.2984pt>
+File: img/output2.png Graphic file (type png)
+<use img/output2.png>
+Package pdftex.def Info: img/output2.png  used on input line 199.
+(pdftex.def)             Requested size: 312.00119pt x 166.4054pt.
+<img/output3.png, id=32, 496.4949pt x 338.9463pt>
+File: img/output3.png Graphic file (type png)
+<use img/output3.png>
+Package pdftex.def Info: img/output3.png  used on input line 206.
+(pdftex.def)             Requested size: 312.00119pt x 213.0046pt.
+ [5 <./img/output.png> <./img/output2.png>]
+<img/output4.png, id=38, 602.0091pt x 268.1217pt>
+File: img/output4.png Graphic file (type png)
+<use img/output4.png>
+Package pdftex.def Info: img/output4.png  used on input line 213.
+(pdftex.def)             Requested size: 312.00119pt x 138.95769pt.
+) (./secoes/ucqe.tex) [6 <./img/output3.png> <./img/output4.png>] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3743 strings out of 468489
- 64493 string characters out of 5440514
- 588167 words of memory out of 6000000
- 32630 multiletter control sequences out of 15000+600000
+ 3856 strings out of 468489
+ 66407 string characters out of 5440514
+ 589695 words of memory out of 6000000
+ 32736 multiletter control sequences out of 15000+600000
  632948 words of font info for 58 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 73i,12n,77p,369b,175s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,12n,77p,369b,240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (5 pages, 130626 bytes).
+Output written on main.pdf (7 pages, 418427 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

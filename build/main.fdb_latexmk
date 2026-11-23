@@ -1,12 +1,12 @@
 # Fdb version 4
-["lualatex"] 1795390633.66972 "/home/emanuel-dionisio/Projeto-de-fisica/Projeto-de-fisica2/main.tex" "build/main.pdf" "main" 1795390634.43516 0
+["lualatex"] 1795394713.74688 "/home/emanuel-dionisio/Projeto-de-fisica/Projeto-de-fisica2/main.tex" "build/main.pdf" "main" 1795394715.02489 0
   "/home/emanuel-dionisio/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1795301120.26074 128281 c6f80f39b6b4f903e4339f6819ec2ecc ""
   "/home/emanuel-dionisio/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1795301119.33681 127652 a5bcc9609cb60f4b11aae93e79c7a0c6 ""
   "/home/emanuel-dionisio/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc" 1795301119.17182 128903 97a8402bc1f22ad44d704bec94f6c3a8 ""
   "/home/emanuel-dionisio/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc" 1795390579.54062 128498 26b426622a050256c91d2d7aac6eb659 ""
   "/home/emanuel-dionisio/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1795301119.00383 128128 ca20734c6458fb2502cd84305b602bbe ""
   "/home/emanuel-dionisio/.texlive2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1795294710.1294 367447 7dff8f53df2b3dd8275778b0e443d683 ""
-  "/home/emanuel-dionisio/Projeto-de-fisica/Projeto-de-fisica2/main.tex" 1795390577.56262 956 80d11d9484c5c61cda2c6bdcaa5ae361 ""
+  "/home/emanuel-dionisio/Projeto-de-fisica/Projeto-de-fisica2/main.tex" 1795393870.36764 931 d12703c73742f4730496919f761998e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -67,7 +67,6 @@
   "/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex" 1632168149 95525 6fd0552101a6b1f9b7a84b402ec435ba ""
   "/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty" 1632168149 14690 c2c754218a7108db7823a4839c1bc3cd ""
   "/usr/share/texlive/texmf-dist/tex/latex/tex-ini-files/lualatexquotejobname.lua" 1700513690 1021 ae37ae5e20605f170274bb33ea1a0e3d ""
-  "/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty" 1698869629 1618 c5f08dcf49a56107311a81073b35fa4e ""
   "/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty" 1686341992 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "/usr/share/texlive/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-case.lua" 1645915452 1921 020c660fdc1d4c83ffebb059fead7b51 ""
   "/usr/share/texlive/texmf-dist/tex/luatex/lua-uni-algos/lua-uni-normalize.lua" 1645915452 21269 eb4154856f0afe9e8d886dbf6922dcc6 ""
@@ -117,10 +116,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1794104123.11697 5349216 bf3a80e68d946c7acd95ff030fd9bb63 ""
   "/var/lib/texmf/tex/generic/config/language.dat" 1795294617.38911 3103 46eb39dc3212e747209a4bfd2a4cc941 ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1795294637 12241662 e5bc130c426c97ae0652333f3ba9ffca ""
-  "build/main.aux" 1795390634.32568 344 470fe0717f5fbb79624245d557a4f9db "lualatex"
-  "main.tex" 1795390577.56262 956 80d11d9484c5c61cda2c6bdcaa5ae361 ""
-  "secoes/Caixa.tex" 1795383473.57693 4957 8d63b8852cde0de5c3a96eefa1c0f523 ""
-  "secoes/ucqe.tex" 1795390633.41316 287 243d7ab817052252540a0817967d01dd ""
+  "build/main.aux" 1795394714.87896 344 9614b856d9098a87b20a8fe4c97ca823 "lualatex"
+  "main.tex" 1795393870.36764 931 d12703c73742f4730496919f761998e7 ""
+  "secoes/Caixa.tex" 1795393113.99209 6730 8d28ddbf69e9a95d8d552e5aeafc5555 ""
+  "secoes/ucqe.tex" 1795394713.50628 1316 f60f2e35b53491f1161b353499bbaf03 ""
   (generated)
   "build/main.aux"
   "build/main.log"

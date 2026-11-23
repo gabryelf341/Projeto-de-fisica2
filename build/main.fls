@@ -75,7 +75,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty

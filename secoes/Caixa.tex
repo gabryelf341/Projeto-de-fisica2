@@ -126,3 +126,31 @@ do ponto de equilíbrio, e devolva $\vec{x}(t)$ e $\vec{v}(t)$ em qualquer fase.
 
 \vspace{0.3cm}
 \textbf{Solução:}
+O determinante da matriz $A_R$ é não nulo. Se uma matriz tem determinante não nulo, ela não pode ter autovalor nulo.
+$A_0$ tem autovalor nulo, como vimos no projeto 1. Isso implica que o seu determinante é nulo.
+Podemos ver que o determinante não é nulo, calculando ele por meio do método de chió. Reduzindo o tamanho da matriz e obtendo uma recorrencia para os determinantes.
+O código adaptado está no main.ipynb.
+
+
+\vspace{0.3cm}
+
+\textbf{(1.c)} A simulação é uma sequência de fases. Em cada uma, a condição inicial é o estado $(\vec{x},\vec{v})$
+no fim da anterior, e o fim da fase é o primeiro instante em que uma das condições de contato
+muda: $x_N = d$ ou $x_1 = -d$ na fase livre, e o descolamento na fase de contato. Como $\vec{x}(t)$ é
+conhecido em forma fechada, achar esse instante é achar a primeira raiz de uma função conhecida.
+Proponha e implemente um método para isso. Uma possibilidade é amostrar a função numa
+grade de passo $\Delta t$, achar a primeira troca de sinal e refinar a raiz por bisseção. Nesse caso,
+explique como escolher $\Delta t$, e o que pode dar errado se ele for grande demais. Estime a duração
+típica de um contato.
+
+\vspace{0.3cm}
+\textbf{Solução:}
+Queremos determinar a primeira raiz para a função $f(t) = x_N(t)-d = 0$(ou $f(t) = x_1(t)+d = 0$, depende da fase). Para isso podemos discretizar o tempo $\delta t$ e a cada passo tentar avaliar se houve troca de sinal na função.
+
+
+\vspace{0.3cm}
+\textbf{(1.d)} Escreva a energia mecânica total, incluindo as molas das paredes quando comprimidas, e
+verifique que ela se conserva ao longo de milhares de colisões. Explique como o erro na energia
+depende da precisão com que os instantes de troca de fase são calculados.
+
+\textbf{Solução:}
